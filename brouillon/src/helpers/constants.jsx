@@ -22,7 +22,6 @@ export const nameList = () => {
         "Balde",
         "Toure: Mandimóori",
         "Dia",
-        "Sy",
         "Sall: Ngaari",
         "Ngom",
         "Camara: Yille",
