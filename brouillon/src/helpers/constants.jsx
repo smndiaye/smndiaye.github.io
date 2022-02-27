@@ -305,5 +305,9 @@ export const nameList = () => {
         if(a < b) { return -1; }
         if(a > b) { return 1; }
         return 0;
-    })
+    }).map((item, i) => ({
+        id: i,
+        name: item.split(':')[0],
+        dakkantal: item.split(':').length > 1 ? item.split(':')[1] : '',
+    }))
 }

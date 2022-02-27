@@ -1,6 +1,5 @@
 import './App.css';
-import Dakkantal from "./component/dakkantal";
-import ResponsiveDrawer from "./component/drawer";
+import DakkantalV2 from "./component/dakkantal.v2";
 
 function App() {
   return (
@@ -10,7 +9,7 @@ function App() {
             A non-exhaustive list of Senegalese family names
         </p>
       </header>
-      <Dakkantal/>
+        <DakkantalV2/>
     </div>
   );
 }
