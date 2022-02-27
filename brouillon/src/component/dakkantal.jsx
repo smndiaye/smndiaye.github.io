@@ -7,16 +7,10 @@ import TableHead from '@material-ui/core/TableHead'
 import TableRow from '@material-ui/core/TableRow'
 import CircularProgress from '@material-ui/core/CircularProgress'
 import {nameList} from "../helpers/constants";
-const generateNameTable = () => {
-    return nameList().map((item, i) => ({
-        id: i,
-        name: item.split(':')[0],
-        dakkantal: item.split(':').length > 1 ? item.split(':')[1] : '',
-    }))
-}
+
 const Dakkantal = () => {
     const tableEl = useRef()
-    const [rows, setRows] = useState(generateNameTable())
+    const [rows, setRows] = useState(nameList()())
     const [loading, setLoading] = useState(false)
     const [distanceBottom, setDistanceBottom] = useState(0)
     const [hasMore] = useState(true)
@@ -24,7 +18,7 @@ const Dakkantal = () => {
         const loadItems = async () => {
             await new Promise(resolve =>
                 setTimeout(() => {
-                    setRows(generateNameTable())
+                    setRows(nameList())
                     setLoading(false)
                     resolve()
                 }, 2000)
