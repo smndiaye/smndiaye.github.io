@@ -15,7 +15,7 @@ const DakkantalV2 = () => {
     return (
         <TableContainer style={{ maxWidth: '800px', margin: 'auto', maxHeight: '600px' }} ref={tableEl}>
             <MaterialTable
-                title="Updated at 2022-02-27"
+                title="Updated at 2022-05-08"
                 columns={columns}
                 data={rows}
             />
