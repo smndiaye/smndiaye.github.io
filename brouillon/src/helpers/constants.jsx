@@ -86,7 +86,7 @@ export const nameList = () => {
         "Diankha",
         "Diao: Banna",
         "Diarra: Kolo Bakary",
-        "Diasse",
+        "Diasse: Al Diasse Mamour Ndiaye Dorobe, Biram Dieum Ngoy Thiam, Ngoy Thiam Ndiougour Thiam Ale Demba ma Yoro Bator Thiam",
         "Diassy",
         "Diatta: Ndiaye",
         "Diattara",
